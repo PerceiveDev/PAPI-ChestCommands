@@ -1,0 +1,14 @@
+main: com.perceivedev.papichestcommands.PAPIChestCommands
+name: PAPI-ChestCommands
+version: 1.0
+description: A bukkit plugin to allow ChestCommands to use PlaceholderAPI placeholders
+author: [Rayzr]
+depend: [PlaceholderAPI]
+loadbefore: [ChestCommands]
+load: STARTUP
+#commands:
+#  uskyfix-chestcommands:
+#    description: uSkyFix-ChestCommands main command
+#    aliases: [alias1,alias2]
+#    usage: "/uskyfix-chestcommands [command]"
+#    permission: uSkyFix-ChestCommands.main
