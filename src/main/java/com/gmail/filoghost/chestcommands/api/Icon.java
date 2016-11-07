@@ -41,16 +41,8 @@ public class Icon {
 
     private Set<Variable>               nameVariables;
     private Map<Integer, Set<Variable>> loreVariables;
-    private ItemStack                   cachedItem;                         // When
-                                                                            // there
-                                                                            // are
-                                                                            // no
-                                                                            // variables,
-                                                                            // we
-                                                                            // don't
-                                                                            // recreate
-                                                                            // the
-                                                                            // item.
+    // When there are no variables, we don't recreate the item.
+    private ItemStack                   cachedItem;
 
     public Icon() {
         enchantments = new HashMap<Enchantment, Integer>();
