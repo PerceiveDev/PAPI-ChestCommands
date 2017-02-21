@@ -26,23 +26,23 @@ import me.clip.placeholderapi.PlaceholderAPI;
 
 public class Icon {
 
-    private Material                    material;
-    private int                         amount;
-    private short                       dataValue;
+    private Material material;
+    private int amount;
+    private short dataValue;
 
-    private String                      name;
-    private List<String>                lore;
-    private Map<Enchantment, Integer>   enchantments;
-    private Color                       color;
-    private String                      skullOwner;
+    private String name;
+    private List<String> lore;
+    private Map<Enchantment, Integer> enchantments;
+    private Color color;
+    private String skullOwner;
 
-    protected boolean                   closeOnClick;
-    private ClickHandler                clickHandler;
+    protected boolean closeOnClick;
+    private ClickHandler clickHandler;
 
-    private Set<Variable>               nameVariables;
+    private Set<Variable> nameVariables;
     private Map<Integer, Set<Variable>> loreVariables;
     // When there are no variables, we don't recreate the item.
-    private ItemStack                   cachedItem;
+    private ItemStack cachedItem;
 
     public Icon() {
         enchantments = new HashMap<Enchantment, Integer>();
@@ -221,7 +221,7 @@ public class Icon {
                 // Add a color to display the name empty.
                 return ChatColor.WHITE.toString();
             } else {
-                return name;
+                return PlaceholderAPI.setPlaceholders(pov, name);
             }
         }
 
