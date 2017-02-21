@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.perceivedev</groupId>
 	<artifactId>papichestcommands</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<name>PAPI-ChestCommands</name>
 	<description>A bukkit plugin to allow ChestCommands to use PlaceholderAPI placeholders</description>
 	<repositories>
